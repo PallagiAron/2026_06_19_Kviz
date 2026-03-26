@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvíz</title>
+</head>
+
+<body>
+    <form action="index.html" method="get">
+        <!-- 1.kérdés -->
+        <h2>Mi Izland fővárosa?</h2>
+        <label for="fovaros">First name:</label><br>
+        <input type="text" id="fovaros" name="fovaros" placeholder="pl.Budapest"><br>
+        
+        <!-- 2.kérdés -->
+        <h2>Meylik izlandi vízesés?</h2>
+        <input type="radio" id="niagara" name="vizes" value="Niagara">
+        <label for="niagara">Niagara</label><br>
+
+        <input type="radio" id="gullfoss" name="vizes" value="Gullfoss">
+        <label for="gullfoss">Gullfoss</label><br>
+        <br>
+        <!-- 3.kérdés -->
+         
+         <input type="checkbox" id="latnivalo" name="latnivalo" value="bálna">
+         <label for="bálna">bálna</label><br>
+        
+        <input type="checkbox" id="latnivalo" name="latnivalo" value="fóka">
+        <label for="fóka">fóka</label><br>
+
+        <input type="checkbox" id="latnivalo" name="latnivalo" value="pingvin">
+        <label for="pingvin">pingvin</label><br>
+
+
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="felhasznaloi_input"></div>
+    <script src="quiz.js"></script>
+     <h3>A felhasznaló válasza</h3>
+        <p>1. ${fovaros}</p>
+        <p>1. ${vizeseses}</p>
+
+</body>
+
+</html>
